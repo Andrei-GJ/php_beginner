@@ -11,3 +11,33 @@ if($a > $b){
 }else{
     echo 'b es mayor que a';
 }
+
+echo'<hr>';
+echo'<br>';
+
+$nombre ="hola";
+
+echo $nombre ?? "perro";
+echo'<hr>';
+echo'<br>';
+
+$par = 3;
+
+switch ($par){
+    case 1:{
+        echo 'enero';
+        exit();
+    }
+    case 2:{
+        echo 'febrero';
+        exit();
+    }
+    case 3:{
+        echo 'marzo';
+        exit();
+    }
+    default :{
+        echo 'xd';
+        exit();
+    }
+}
