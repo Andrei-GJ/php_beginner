@@ -43,3 +43,35 @@ function recorrer_usuario(...$usuarios): string {
 }
 
 echo recorrer_usuario('usuario1', 'usuario2', 'usuario3'); // Corregimos el formato de los parámetros
+
+
+
+echo '<hr>';
+
+
+function recorrer_cuidades($cuidades):string
+{
+    foreach ($cuidades as $cuidad) {
+        list($pais, $cuidad, $poblacion) = $cuidad;
+        $respuesta .= "{$pais}, {$cuidad},{$poblacion}<br>";
+    }
+    return $respuesta;
+}
+
+
+
+$ciudades= [
+    ["Madrid" , "España", 3.3],  // En millon<br>, es
+    ["París" , "Francia", 2.1],
+    ["Berlín" ,  "Alemania", 3.6],
+    ["Londres",  "Reino Unido", 9.3],
+    ["Roma", "Italia", 2.8],
+    ["Ciudad de México" , "México", 8.9],
+    ["Buenos Aires" , "Argentina", 2.9],
+    ["Tokio" ,  "Japón", 37.8],
+    ["Pekín" ,  "China", 21.5],
+    ["Washington D.C.", "Estados Unidos", 0.7]
+];
+
+
+echo recorrer_cuidades($ciudades);
