@@ -15,10 +15,6 @@ $funcion = function (): string {
 echo $funcion();
 echo '<br>';
 // Tener en cuenta los parametos para el sprintf
-//function saludo (string $nombre):string{
-//    $nombre = $nombre ?? 'perro';
-//    return sprintf('hola %s', $nombre);
-//}
 function saludo(string $nombre): string {
     return sprintf('Hola %s', $nombre);
 }
@@ -57,8 +53,6 @@ function recorrer_cuidades($cuidades):string
     }
     return $respuesta;
 }
-
-
 
 $ciudades= [
     ["Madrid" , "España", 3.3],  // En millon<br>, es
